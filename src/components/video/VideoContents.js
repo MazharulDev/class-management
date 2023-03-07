@@ -13,7 +13,7 @@ const VideoContents = ({ content, serial }) => {
                     {content.chapter}
                 </div>
                 <div className="collapse-content">
-                    <Link to={`/class/li/${content?._id}`} className='flex justify-start gap-2 items-center cursor-pointer hover:text-green-400'>
+                    <Link to={`/class/li/${content?.contentTitle}`} className='flex justify-start gap-2 items-center cursor-pointer hover:text-green-400'>
                         <AiFillPlayCircle className='text-2xl text-gray-500' />
                         <p>{content.contentTitle}</p>
                     </Link>

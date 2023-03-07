@@ -7,9 +7,9 @@ import { useParams } from 'react-router-dom';
 const CourseVideoPlayer = () => {
     // const url = singleVideo ? singleVideo?.link : courseContent[0]?.link
     // const id = getYouTubeID(url)
-    const id = useParams()
+    const title = useParams()
     const [courseContent, setCourseContent] = useState([])
-    console.log(id);
+    console.log(title);
     // const url = `http://localhost:5000/api/v1/course-content/content/${id}`
     // useEffect(() => {
     //     fetch(url)

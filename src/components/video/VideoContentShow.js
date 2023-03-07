@@ -4,10 +4,12 @@ import { Outlet } from 'react-router-dom';
 import VideoContents from './VideoContents';
 
 const VideoContentShow = () => {
+    const id = "63eb51569dd5aeec55a4654c"
     // const [index, setIndex] = useState(0);
     const [courseContent, setCourseContent] = useState([])
 
-    const url = `http://localhost:5000/api/v1/course-content/content/63eb51569dd5aeec55a4654c`
+    // let queryUrl = http://localhost:5000/api/v1/course-content/contents/class?courseid=63eb51569dd5aeec55a4654c&classname=How%20to%20add%20primary
+    const url = `http://localhost:5000/api/v1/course-content/content/${id}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
